@@ -18,13 +18,22 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
+    /* add alongside your existing deeclarations*/
     font-weight: bold;
     margin: 0;
     font-size: 36px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -48,7 +57,10 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* FOOTER STYLES START */
 
 footer {
     background: #fce138;
@@ -84,6 +96,8 @@ section {
     background-image: url(../images/Runner-shoe.jpeg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -91,6 +105,7 @@ section {
 }
 
 .hero-cta {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 35%;
     text-align: right;
     margin: 3.5%;
@@ -100,14 +115,17 @@ section {
 }
 
 .hero-cta h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-style: italic;
     font-size: 55px;
     color: #fce138;
 }
 
 .hero-form {
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 3px solid #024e76;
-    background-color: #fce138;
+    background-color: rgba(252, 226, 56, 0.815);
     padding: 20px;
     color: #024e76;
     width: 40%;
@@ -124,6 +142,7 @@ section {
 }
 
 .form-input {
+    border-radius: 10px;
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -138,6 +157,7 @@ section {
 }
 
 .hero-form button {
+    border-radius: 10px;
     color: #fce138;
     background-color: #024e76;
     border: none;
@@ -325,6 +345,7 @@ contact {
 }
 
 .contact-form input, .contact-form textarea {
+    border-radius: 10px;
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -336,6 +357,7 @@ contact {
 }
 
 .contact-form button {
+    border-radius: 10px;
     width: 100%;
     border: none;
     background: #fce138;
